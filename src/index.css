@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+  body {
+    @apply bg-paper text-neutral-800 font-sans antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white rounded-lg shadow-sm border border-lavender p-4;
+  }
+  .btn-primary {
+    @apply bg-ink text-white rounded-lg px-4 py-2 font-medium hover:bg-mid transition-colors;
+  }
+  .btn-quiet {
+    @apply bg-lavender text-ink rounded-lg px-4 py-2 font-medium hover:bg-mid hover:text-white transition-colors;
+  }
+  .input {
+    @apply w-full rounded-lg border border-lavender bg-white px-3 py-2 focus:outline-none focus:ring-2 focus:ring-mid;
+  }
+  .label {
+    @apply block text-sm font-medium text-mid mb-1;
+  }
+}
